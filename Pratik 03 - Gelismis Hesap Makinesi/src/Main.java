@@ -107,6 +107,31 @@ public class Main {
         System.out.println("Sonuç : " + result);
     }
 
+    static void mod() {
+        int a, b;
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Sayı girin : ");
+        a = scan.nextInt();
+
+        System.out.println("Sayı girin : ");
+        b = scan.nextInt();
+
+        System.out.println("Sonuç : " + a % b);
+    }
+
+    static void calc() {
+        int a, b;
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Sayı girin : ");
+        a = scan.nextInt();
+
+        System.out.println("Sayı girin : ");
+        b = scan.nextInt();
+
+        System.out.println("Çevresi : " + (2 * (a + b)));
+        System.out.println("Alanı : " + (a * b));
+    }
+
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
@@ -144,8 +169,11 @@ public class Main {
                 case 6:
                     factorial();
                     break;
-                case 0:
+                case 7:
+                    mod();
                     break;
+                case 8:
+                    calc();
                 default:
                     System.out.println("Yanlış bir değer girdiniz, tekrar deneyiniz.");
             }
